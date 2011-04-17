@@ -41,8 +41,9 @@ class FilmsController < ApplicationController
   # POST /films
   # POST /films.xml
   def create
+    puts params.inspect
     @film = Film.new(params[:film])
-
+    
     respond_to do |format|
       if @film.save
         format.html { redirect_to(@film, :notice => 'Film was successfully created.') }

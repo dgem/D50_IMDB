@@ -31,4 +31,5 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 	gem 'annotate'
 	gem 'rspec-rails'
 	gem 'factory_girl_rails'
+	gem 'ruby-debug'
  end
