@@ -41,7 +41,6 @@ class FilmsController < ApplicationController
   # POST /films
   # POST /films.xml
   def create
-    puts params.inspect
     @film = Film.new(params[:film])
     
     respond_to do |format|
